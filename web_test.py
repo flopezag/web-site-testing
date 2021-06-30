@@ -18,7 +18,7 @@
 ##
 
 import HtmlTestRunner
-from tests.testlinks import ChromeSearch
+from tests.test_links import ChromeSearch
 from unittest import main, TestLoader, TextTestRunner
 
 __author__ = 'Fernando López'
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     main()
 
     suite = TestLoader().loadTestsFromTestCase(ChromeSearch)
-    TextTestRunner(verbosity=2).run(suite)
+    TextTestRunner(verbosity=4).run(suite)
 
     outfile = open("report.html", "w")
 

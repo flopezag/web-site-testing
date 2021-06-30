@@ -1,8 +1,30 @@
 {
-  "links": [
-    {
-      "url": "https://www.fiware.org/marketing-material/fiware-for-data-spaces",
-      "link": "https://www.fiware.org/wp-content/uploads/FF_PositionPaper_FIWARE4DataSpaces.pdf"
-    }
-  ]
+  "fiware-for-data-spaces": {
+    "url": "https://www.fiware.org/marketing-material/fiware-for-data-spaces",
+    "link": "https://www.fiware.org/wp-content/uploads/FF_PositionPaper_FIWARE4DataSpaces.pdf"
+  },
+  "fiware-for-digital-twins": {
+    "url": "https://www.fiware.org/marketing-material/fiware-for-digital-twins",
+    "link": "https://www.fiware.org/wp-content/uploads/FF_PositionPaper_FIWARE4DigitalTwins.pdf"
+  },
+  "artificial-intelligence-within-cities": {
+    "url": "https://www.fiware.org/marketing-material/artificial-intelligence-within-cities",
+    "link": "https://www.fiware.org/wp-content/uploads/FF_WhitePaper_AI.pdf"
+  },
+  "smart-maas": {
+    "url": "https://www.fiware.org/marketing-material/smart-maas-the-beacon-of-disruption-for-sustainable-transportation-systems",
+    "link": "https://www.fiware.org/wp-content/uploads/WhitePaper_SmartMaaS_FIWARE.pdf"
+  },
+  "sap_en": {
+    "url": "https://www.fiware.org/marketing-material/smart-city-ecosystem-laying-the-foundations-using-decision-making-sovereignty",
+    "link": "https://www.fiware.org/wp-content/uploads/Whitepaper-FIWARE-SAP_English.pdf"
+  },
+  "sap_de": {
+    "url": "https://www.fiware.org/marketing-material/smart-city-okosystem-fundament-legen-entscheidungshoheit-nutzen",
+    "link": "https://www.fiware.org/wp-content/uploads/Whitepaper-FIWARE-SAP_Deutsch.pdf"
+  },
+  "future-water": {
+    "url": "https://www.fiware.org/marketing-material/future-cities-smart-resilient-inclusive-and-sustainable",
+    "link": "https://www.fiware.org/wp-content/uploads/White_Paper_FIWARE_Our_Future-Water.pdf"
+  }
 }
