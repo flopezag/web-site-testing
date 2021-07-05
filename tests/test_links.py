@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException
+from webdriver_manager.chrome import ChromeDriverManager
 from config.settings import DRIVER_HOME, LINKS
-from os.path import join
 import unittest
 
 
@@ -11,16 +11,14 @@ class ChromeSearch(unittest.TestCase):
     def setUp(self):
         # Step 1) Open Chrome
         self.drivers = dict()
-        self.driver = webdriver.Chrome(join(DRIVER_HOME, 'chromedriver'))
+        self.driver = webdriver.Chrome(ChromeDriverManager().install())
+        # self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        # self.driver = webdriver.Ie(IEDriverManager().install())
+        # self.driver = webdriver.Edge(EdgeChromiumDriverManager().install())
+        # self.driver = webdriver.Opera(executable_path=OperaDriverManager().install())
 
         # Wait implicitly for elements to be ready before attempting interactions
         self.driver.implicitly_wait(10)
-
-        # self.browser = webdriver.Chrome(
-        #    executable_path=ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install())
-        # self.drivers['Firefox'] = webdriver.Firefox(join(DRIVER_HOME, 'firefox'))
-        # self.drivers['Edge'] = webdriver.Edge(join(DRIVER_HOME, 'msedgedriver'))
-        # self.drivers['Opera'] = webdriver.Opera(join(DRIVER_HOME, 'operadriver'))
 
     def test_data_spaces(self):
         page = 'fiware-for-data-spaces'
@@ -97,7 +95,6 @@ class ChromeSearch(unittest.TestCase):
         # NoSuchElementException thrown if not present
         except NoSuchElementException:
             print("Element does not exist")
-
 
     def tearDown(self):
         self.driver.close()

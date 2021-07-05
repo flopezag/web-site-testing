@@ -1,3 +1,5 @@
 # python3.9 project
 selenium==3.141.0
 html-testRunner==1.2.1
+webdriver-manager==3.4.2
+python-pytest
